@@ -31,4 +31,27 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-file</artifactId>
+                <version>2.7</version>
+            </extension>
+        </extensions>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>repobo-rel</id>
+            <name>repo.bukkit.org Releases</name>
+            <url>file:///Users/jamie/Repo</url>
+        </repository>
+        <snapshotRepository>
+            <id>repobo-snap</id>
+            <name>repo.bukkit.org Snapshots</name>
+            <url>file:///Users/jamie/Repo</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
