@@ -7,7 +7,7 @@
     <groupId>io.github.lexware</groupId>
     <artifactId>canary-maven-plugin</artifactId>
     <name>Canary Maven Plugin</name>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>maven-plugin</packaging>
 
     <licenses>
@@ -17,6 +17,12 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <scm>
+        <developerConnection>scm:git:git@github.com:lexware/canary-maven-plugin.git</developerConnection>
+        <connection>scm:git:git://github.com/lexware/canary-maven-plugin.git</connection>
+        <url>https://github.com/lexware/canary-maven-plugin/tree/master</url>
+    </scm>
     
     <dependencies>
         <dependency>
