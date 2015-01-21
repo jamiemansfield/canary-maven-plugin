@@ -42,10 +42,13 @@ public class CanaryMavenPlugin extends AbstractMojo {
     @Parameter(required = true)
     private String author;
     
-    @Parameter(defaultValue = "java")
+    @Parameter(defaultValue = "java", required = false)
     private String language;
     
-    @Parameter
+    @Parameter(defaultValue = "false", required = false)
+    private Boolean enableEarly;
+    
+    @Parameter(required = false)
     private String dependencies;
 
     @Parameter(defaultValue = "${project.build.outputDirectory}", required = true)
@@ -64,6 +67,7 @@ public class CanaryMavenPlugin extends AbstractMojo {
         props.put("version", version);
         props.put("author", author);
         if(language != null) props.put("language", language);
+        if(enableEarly != null) props.put("enableEarly", enableEarly);
         if(dependencies != null) props.put("dependencies", dependencies);
 
         try {

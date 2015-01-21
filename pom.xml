@@ -7,7 +7,7 @@
     <groupId>io.github.lexware</groupId>
     <artifactId>canary-maven-plugin</artifactId>
     <name>Canary Maven Plugin</name>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>maven-plugin</packaging>
 
     <licenses>
@@ -17,6 +17,20 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+    
+    <developers>
+        <developer>
+            <id>jmansfield</id>
+            <name>Jamie Mansfield</name>
+            <email>malgm@lapis.blue</email>
+            <url>https://github.com/lexware</url>
+            <timezone>GMT/England</timezone>
+            <roles>
+                <role>Project lead</role>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
 
     <scm>
         <developerConnection>scm:git:git@github.com:lexware/canary-maven-plugin.git</developerConnection>
@@ -50,13 +64,11 @@
 
     <distributionManagement>
         <repository>
-            <id>repobo-rel</id>
-            <name>repo.bukkit.org Releases</name>
+            <id>lex-releases</id>
             <url>file:///Users/jamie/Repo</url>
         </repository>
         <snapshotRepository>
-            <id>repobo-snap</id>
-            <name>repo.bukkit.org Snapshots</name>
+            <id>lex-snapshots</id>
             <url>file:///Users/jamie/Repo</url>
         </snapshotRepository>
     </distributionManagement>
